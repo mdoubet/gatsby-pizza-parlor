@@ -4,12 +4,12 @@ import styled from 'styled-components';
 import Logo from './Logo';
 
 const NavStyles = styled.nav`
-  margin-bottom: 3rem;
+  margin-bottom: -1rem;
   .logo {
     transform: translateY(-25%);
   }
   ul {
-    margin: 0;
+    margin: -5rem 0 0 0;
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr auto 1fr 1fr;
@@ -17,7 +17,6 @@ const NavStyles = styled.nav`
     text-align: center;
     list-style: none;
     align-items: center;
-    margin-top: -5rem;
   }
   li {
     --rotate: -2deg;
@@ -65,7 +64,7 @@ export default function Nav() {
           </Link>
         </li>
         <li>
-          <Link to="/slicemasters">SliceMasters</Link>
+          <Link to="/slicemasters">Slice Masters</Link>
         </li>
         <li>
           <Link to="/order">Order Ahead!</Link>

@@ -20,6 +20,7 @@ const PizzaStyles = styled.div`
   h2,
   p {
     margin: 0;
+    margin-bottom: -10px;
   }
 `;
 
