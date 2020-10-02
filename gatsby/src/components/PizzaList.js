@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import Img from 'gatsby-image';
 
 function SinglePizza({ pizza }) {
+  console.log(pizza.name, pizza);
   return (
     <div>
       <Link to="/pizza/{pizza.slug.current}">

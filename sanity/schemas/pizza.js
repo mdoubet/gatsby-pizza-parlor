@@ -1,6 +1,5 @@
 import { MdLocalPizza as icon } from 'react-icons/md';
 import PriceInput from '../components/PriceInput';
-import toppings from './toppings';
 
 export default {
   // Computer name
@@ -45,7 +44,7 @@ export default {
       name: 'toppings',
       title: 'Toppings',
       type: 'array',
-      of: [{ type: 'reference', to: [{ type: 'toppings' }] }],
+      of: [{ type: 'reference', to: [{ type: 'topping' }] }],
     },
   ],
   preview: {
@@ -59,9 +58,9 @@ export default {
       topping4: 'toppings.4.name',
       topping5: 'toppings.5.name',
       topping6: 'toppings.6.name',
-      topping7: 'topping.7.name',
-      topping8: 'topping.8.name',
-      topping9: 'topping.9.name',
+      topping7: 'toppings.7.name',
+      topping8: 'toppings.8.name',
+      topping9: 'toppings.9.name',
     },
     prepare: ({ title, media, ...toppingses }) => {
       console.log(toppingses);
