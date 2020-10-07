@@ -1,6 +1,7 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 import PizzaList from '../components/PizzaList';
+import ToppingsFilter from '../components/ToppingsFilter';
 
 export default function PizzasPage({ data }) {
   const pizzas = data.allSanityPizza.nodes;
@@ -9,6 +10,7 @@ export default function PizzasPage({ data }) {
   console.log(pizzas);
   return (
     <>
+      <ToppingsFilter />
       <PizzaList pizzas={pizzas} pizzaCount={totalCount} />
     </>
   );
